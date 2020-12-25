@@ -16,3 +16,8 @@ $("#stars > label")
 			$("#star" + i).prop("checked", true);
 		}
 	});
+
+$("#stars").submit(function (event) {
+  event.preventDefault();
+  alert(starsChecked + "stars checked.");
+})
