@@ -9,6 +9,9 @@ $("#stars > label")
 	})
 	.click(function (event) {
 		const starClicked = event.target.id.replace("label-star", "");
+    for (i = 1; i <= 5; i++) {
+      $("#star" + i).prop("checked", false);
+    }
 		for (i = 1; i <= starClicked - 1; i++) {
 			$("#star" + i).prop("checked", true);
 		}
